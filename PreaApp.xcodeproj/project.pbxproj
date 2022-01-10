@@ -15,6 +15,13 @@
 		14DD7DC2278CDDC80027208A /* PreaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DD7DC1278CDDC80027208A /* PreaAppUITests.swift */; };
 		14DD7DC4278CDDC80027208A /* PreaAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DD7DC3278CDDC80027208A /* PreaAppUITestsLaunchTests.swift */; };
 		14DD7DD2278CDE070027208A /* OpenAPIClient in Frameworks */ = {isa = PBXBuildFile; productRef = 14DD7DD1278CDE070027208A /* OpenAPIClient */; };
+		14DD7DD5278CDE5F0027208A /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DD7DD4278CDE5F0027208A /* AppViewModel.swift */; };
+		14DD7DD8278CE0280027208A /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DD7DD7278CE0280027208A /* AuthenticationView.swift */; };
+		14DD7DDA278CE06A0027208A /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DD7DD9278CE06A0027208A /* AuthenticationViewModel.swift */; };
+		14DD7DDC278CE1760027208A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DD7DDB278CE1760027208A /* LoginViewModel.swift */; };
+		14DD7DDE278CE1870027208A /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DD7DDD278CE1870027208A /* RegisterViewModel.swift */; };
+		14DD7DE0278CE26A0027208A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DD7DDF278CE26A0027208A /* LoginView.swift */; };
+		14DD7DE2278CF7060027208A /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DD7DE1278CF7060027208A /* RegisterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +52,13 @@
 		14DD7DBD278CDDC80027208A /* PreaAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PreaAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14DD7DC1278CDDC80027208A /* PreaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreaAppUITests.swift; sourceTree = "<group>"; };
 		14DD7DC3278CDDC80027208A /* PreaAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreaAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		14DD7DD4278CDE5F0027208A /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		14DD7DD7278CE0280027208A /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		14DD7DD9278CE06A0027208A /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		14DD7DDB278CE1760027208A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		14DD7DDD278CE1870027208A /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		14DD7DDF278CE26A0027208A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		14DD7DE1278CF7060027208A /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +110,8 @@
 		14DD7DA5278CDDC00027208A /* PreaApp */ = {
 			isa = PBXGroup;
 			children = (
+				14DD7DD6278CE00E0027208A /* Views */,
+				14DD7DD3278CDE490027208A /* ViewModels */,
 				14DD7DA6278CDDC00027208A /* PreaAppApp.swift */,
 				14DD7DA8278CDDC00027208A /* ContentView.swift */,
 				14DD7DAA278CDDC80027208A /* Assets.xcassets */,
@@ -127,6 +143,27 @@
 				14DD7DC3278CDDC80027208A /* PreaAppUITestsLaunchTests.swift */,
 			);
 			path = PreaAppUITests;
+			sourceTree = "<group>";
+		};
+		14DD7DD3278CDE490027208A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				14DD7DD4278CDE5F0027208A /* AppViewModel.swift */,
+				14DD7DD9278CE06A0027208A /* AuthenticationViewModel.swift */,
+				14DD7DDB278CE1760027208A /* LoginViewModel.swift */,
+				14DD7DDD278CE1870027208A /* RegisterViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		14DD7DD6278CE00E0027208A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				14DD7DD7278CE0280027208A /* AuthenticationView.swift */,
+				14DD7DDF278CE26A0027208A /* LoginView.swift */,
+				14DD7DE1278CF7060027208A /* RegisterView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,8 +302,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14DD7DE2278CF7060027208A /* RegisterView.swift in Sources */,
 				14DD7DA9278CDDC00027208A /* ContentView.swift in Sources */,
+				14DD7DDA278CE06A0027208A /* AuthenticationViewModel.swift in Sources */,
+				14DD7DDE278CE1870027208A /* RegisterViewModel.swift in Sources */,
+				14DD7DDC278CE1760027208A /* LoginViewModel.swift in Sources */,
 				14DD7DA7278CDDC00027208A /* PreaAppApp.swift in Sources */,
+				14DD7DD5278CDE5F0027208A /* AppViewModel.swift in Sources */,
+				14DD7DE0278CE26A0027208A /* LoginView.swift in Sources */,
+				14DD7DD8278CE0280027208A /* AuthenticationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

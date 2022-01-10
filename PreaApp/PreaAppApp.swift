@@ -9,9 +9,17 @@ import SwiftUI
 
 @main
 struct PreaAppApp: App {
+    
+    @StateObject var viewModel = AppViewModel.shared
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if viewModel.token != nil {
+                ContentView()
+            }
+            else {
+                AuthenticationView(viewModel: viewModel.authenticationViewModel)
+            }
         }
     }
 }
