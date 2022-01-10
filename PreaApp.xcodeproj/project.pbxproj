@@ -14,7 +14,6 @@
 		14DD7DB8278CDDC80027208A /* PreaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DD7DB7278CDDC80027208A /* PreaAppTests.swift */; };
 		14DD7DC2278CDDC80027208A /* PreaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DD7DC1278CDDC80027208A /* PreaAppUITests.swift */; };
 		14DD7DC4278CDDC80027208A /* PreaAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DD7DC3278CDDC80027208A /* PreaAppUITestsLaunchTests.swift */; };
-		14DD7DD2278CDE070027208A /* OpenAPIClient in Frameworks */ = {isa = PBXBuildFile; productRef = 14DD7DD1278CDE070027208A /* OpenAPIClient */; };
 		14DD7DD5278CDE5F0027208A /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DD7DD4278CDE5F0027208A /* AppViewModel.swift */; };
 		14DD7DD8278CE0280027208A /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DD7DD7278CE0280027208A /* AuthenticationView.swift */; };
 		14DD7DDA278CE06A0027208A /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DD7DD9278CE06A0027208A /* AuthenticationViewModel.swift */; };
@@ -22,6 +21,7 @@
 		14DD7DDE278CE1870027208A /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DD7DDD278CE1870027208A /* RegisterViewModel.swift */; };
 		14DD7DE0278CE26A0027208A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DD7DDF278CE26A0027208A /* LoginView.swift */; };
 		14DD7DE2278CF7060027208A /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DD7DE1278CF7060027208A /* RegisterView.swift */; };
+		14DD7DE5278CFEF30027208A /* OpenAPIClient in Frameworks */ = {isa = PBXBuildFile; productRef = 14DD7DE4278CFEF30027208A /* OpenAPIClient */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14DD7DD2278CDE070027208A /* OpenAPIClient in Frameworks */,
+				14DD7DE5278CFEF30027208A /* OpenAPIClient in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,7 +183,7 @@
 			);
 			name = PreaApp;
 			packageProductDependencies = (
-				14DD7DD1278CDE070027208A /* OpenAPIClient */,
+				14DD7DE4278CFEF30027208A /* OpenAPIClient */,
 			);
 			productName = PreaApp;
 			productReference = 14DD7DA3278CDDC00027208A /* PreaApp.app */;
@@ -258,7 +258,7 @@
 			);
 			mainGroup = 14DD7D9A278CDDC00027208A;
 			packageReferences = (
-				14DD7DD0278CDE070027208A /* XCRemoteSwiftPackageReference "prea.tech" */,
+				14DD7DE3278CFEF30027208A /* XCRemoteSwiftPackageReference "Prea.tech-Swift-ApiClient" */,
 			);
 			productRefGroup = 14DD7DA4278CDDC00027208A /* Products */;
 			projectDirPath = "";
@@ -639,9 +639,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		14DD7DD0278CDE070027208A /* XCRemoteSwiftPackageReference "prea.tech" */ = {
+		14DD7DE3278CFEF30027208A /* XCRemoteSwiftPackageReference "Prea.tech-Swift-ApiClient" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/cekisakurek/prea.tech.git";
+			repositoryURL = "https://github.com/cekisakurek/Prea.tech-Swift-ApiClient.git";
 			requirement = {
 				branch = master;
 				kind = branch;
@@ -650,9 +650,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		14DD7DD1278CDE070027208A /* OpenAPIClient */ = {
+		14DD7DE4278CFEF30027208A /* OpenAPIClient */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 14DD7DD0278CDE070027208A /* XCRemoteSwiftPackageReference "prea.tech" */;
+			package = 14DD7DE3278CFEF30027208A /* XCRemoteSwiftPackageReference "Prea.tech-Swift-ApiClient" */;
 			productName = OpenAPIClient;
 		};
 /* End XCSwiftPackageProductDependency section */
