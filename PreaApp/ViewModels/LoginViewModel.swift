@@ -24,11 +24,18 @@ class LoginViewModel: ObservableObject {
         cancellable?.cancel()
     }
     
-    func login() {
-               
+    func loginPublisher() -> AnyPublisher<Token, Error> {
         let user = User(email: email, password: password)
         
-        cancellable = UserAPI.authenticate(user: user)
+        let publisher: AnyPublisher<Token, Error> = UserAPI.authenticate(user: user)
+        
+        return publisher
+    }
+    
+    func login() -> AnyPublisher<Token, Error> {
+               
+        let publisher = loginPublisher()
+        cancellable = publisher
             .sink {
                 [weak self]
                 completion in
@@ -39,9 +46,10 @@ class LoginViewModel: ObservableObject {
                         self?.handleErrorResponse(error: error as? ErrorResponse)
                 }
         } receiveValue: { token in AppViewModel.shared.token = token }
+        return publisher
     }
     
-    private func handleErrorResponse(error: ErrorResponse?) {
+    func handleErrorResponse(error: ErrorResponse?) {
         
         guard let error = error else { return }
         

@@ -22,6 +22,8 @@
 		14DD7DE0278CE26A0027208A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DD7DDF278CE26A0027208A /* LoginView.swift */; };
 		14DD7DE2278CF7060027208A /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DD7DE1278CF7060027208A /* RegisterView.swift */; };
 		14DD7DE5278CFEF30027208A /* OpenAPIClient in Frameworks */ = {isa = PBXBuildFile; productRef = 14DD7DE4278CFEF30027208A /* OpenAPIClient */; };
+		14DD7DE8278D00060027208A /* LoginViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DD7DE7278D00060027208A /* LoginViewModelTest.swift */; };
+		14DD7DEA278D013F0027208A /* PublisherExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DD7DE9278D013F0027208A /* PublisherExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		14DD7DDD278CE1870027208A /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		14DD7DDF278CE26A0027208A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		14DD7DE1278CF7060027208A /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		14DD7DE7278D00060027208A /* LoginViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTest.swift; sourceTree = "<group>"; };
+		14DD7DE9278D013F0027208A /* PublisherExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +135,9 @@
 		14DD7DB6278CDDC80027208A /* PreaAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				14DD7DE6278CFFF80027208A /* ViewModelTests */,
 				14DD7DB7278CDDC80027208A /* PreaAppTests.swift */,
+				14DD7DE9278D013F0027208A /* PublisherExtension.swift */,
 			);
 			path = PreaAppTests;
 			sourceTree = "<group>";
@@ -164,6 +170,14 @@
 				14DD7DE1278CF7060027208A /* RegisterView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		14DD7DE6278CFFF80027208A /* ViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				14DD7DE7278D00060027208A /* LoginViewModelTest.swift */,
+			);
+			path = ViewModelTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,7 +332,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14DD7DE8278D00060027208A /* LoginViewModelTest.swift in Sources */,
 				14DD7DB8278CDDC80027208A /* PreaAppTests.swift in Sources */,
+				14DD7DEA278D013F0027208A /* PublisherExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
